@@ -15,17 +15,25 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body{background: #ddd; font-family: 'Poppins', sans-serif;}
+
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+    }
+    p {font-size: 15px;}
+    body{background: var(--light-gray); font-family: 'Poppins', sans-serif;}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .text-center {text-align: center;}
     .text-header {font-weight: 600; font-size: 24px;}
-    .card {width: 400px; background: #eee; justify-content: center; padding: 20px 0 30px 0;border-radius: 25px; margin-top: 50px;} 
+    .card {width: 400px; background: var(--white); justify-content: center; padding: 20px 0 30px 0;border-radius: 25px; margin-top: 50px;} 
     .container {display: flex; justify-content: center; margin-bottom: 20px;}
     .card-img > img {width: 360px; border-radius: 15px;}
     .card-img {display: flex; justify-content: center;}
     .text-padding{padding: 0 30px;}
-    .text-grey{color: #555}
+    .text-grey{color: var(--grayish-blue)}
     .text-size {font-size: 16px; padding: 0 50px;}
   </style>
 </head>
@@ -44,7 +52,6 @@
 </main>
 <div class="attribution">
   <p>Improve your front-end skills by building projects. Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-
  </div>
 
   <div class="attribution">
